@@ -65,20 +65,13 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 shadow-lg shadow-blue-500/50 group"
-            >
+            <button className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 shadow-lg shadow-blue-500/50 group">
               Register Now
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-blue-500/50 hover:bg-blue-500/10 hover:border-blue-400"
-            >
+            </button>
+            <button className="border-blue-500/50 hover:bg-blue-500/10 hover:border-blue-400">
               Become a Partner
-            </Button>
+            </button>
           </motion.div>
         </motion.div>
       </div>

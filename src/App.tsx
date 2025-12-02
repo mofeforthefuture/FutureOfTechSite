@@ -12,11 +12,11 @@ export default function App() {
     <div className="min-h-screen bg-black text-white">
       <HeroSection />
       <AboutSection />
-      <ThemesSection />
-      <SpeakersSection />
+      {/* <ThemesSection /> */}
+      {/* <SpeakersSection /> */}
       <AgendaSection />
       <PartnersSection />
-      <CTASection />
+      {/* <CTASection /> */}
       <Footer />
     </div>
   );
