@@ -72,7 +72,7 @@ export function AgendaSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+          <h2 className="mb-4 bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
             Event Agenda
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -83,7 +83,7 @@ export function AgendaSection() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500 via-violet-500 to-blue-500 transform md:-translate-x-1/2"></div>
+          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-blue-500 via-violet-500 to-blue-500 transform md:-translate-x-1/2"></div>
 
           {/* Schedule items */}
           <div className="space-y-12">
@@ -115,7 +115,7 @@ export function AgendaSection() {
                 </div>
 
                 {/* Icon in center */}
-                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shadow-lg shadow-blue-500/50 border-4 border-black z-10">
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-12 h-12 rounded-full bg-linear-to-br from-blue-600 to-violet-600 flex items-center justify-center shadow-lg shadow-blue-500/50 border-4 border-black z-10">
                   <item.icon className="h-5 w-5 text-white" />
                 </div>
 

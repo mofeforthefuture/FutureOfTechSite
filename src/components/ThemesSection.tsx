@@ -35,7 +35,7 @@ const themes = [
 
 export function ThemesSection() {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-black to-gray-950 relative">
+    <section className="py-24 px-6 bg-linear-to-b from-black to-gray-950 relative">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,7 +44,7 @@ export function ThemesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+          <h2 className="mb-4 bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
             Conference Themes
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -63,11 +63,11 @@ export function ThemesSection() {
             >
               <Card className="relative h-full bg-gray-900/50 border-gray-800 backdrop-blur-sm hover:border-gray-700 transition-all duration-300 group overflow-hidden">
                 {/* Glow effect on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${theme.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+                <div className={`absolute inset-0 bg-linear-to-br ${theme.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
                 
                 <div className="relative p-6 flex flex-col h-full">
                   {/* Icon */}
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${theme.color} flex items-center justify-center mb-4 shadow-lg`}>
+                  <div className={`w-12 h-12 rounded-lg bg-linear-to-br ${theme.color} flex items-center justify-center mb-4 shadow-lg`}>
                     <theme.icon className="h-6 w-6 text-white" />
                   </div>
 
@@ -77,12 +77,12 @@ export function ThemesSection() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-400 flex-grow">
+                  <p className="text-gray-400 grow">
                     {theme.description}
                   </p>
 
                   {/* Decorative line */}
-                  <div className={`h-1 w-0 bg-gradient-to-r ${theme.color} group-hover:w-full transition-all duration-500 mt-4 rounded-full`}></div>
+                  <div className={`h-1 w-0 bg-linear-to-r ${theme.color} group-hover:w-full transition-all duration-500 mt-4 rounded-full`}></div>
                 </div>
               </Card>
             </motion.div>

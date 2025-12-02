@@ -14,7 +14,7 @@ export function CTASection() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black via-black/90 to-black"></div>
       </div>
 
       {/* Animated particles effect */}
@@ -57,7 +57,7 @@ export function CTASection() {
             <Sparkles className="h-12 w-12 text-violet-400" />
           </motion.div>
 
-          <h2 className="mb-6 bg-gradient-to-r from-blue-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="mb-6 bg-linear-to-r from-blue-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
             Be Part of the Future
           </h2>
 
@@ -75,7 +75,7 @@ export function CTASection() {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 shadow-lg shadow-blue-500/50 group"
+              className="bg-linear-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 shadow-lg shadow-blue-500/50 group"
             >
               Register Now
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -98,19 +98,19 @@ export function CTASection() {
             className="grid grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto"
           >
             <div className="p-6 rounded-xl bg-gray-900/30 backdrop-blur-sm border border-gray-800">
-              <div className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-2">
+              <div className="bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-2">
                 500+
               </div>
               <p className="text-gray-400">Attendees</p>
             </div>
             <div className="p-6 rounded-xl bg-gray-900/30 backdrop-blur-sm border border-gray-800">
-              <div className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-2">
+              <div className="bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-2">
                 20+
               </div>
               <p className="text-gray-400">Speakers</p>
             </div>
             <div className="p-6 rounded-xl bg-gray-900/30 backdrop-blur-sm border border-gray-800">
-              <div className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-2">
+              <div className="bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-2">
                 8+
               </div>
               <p className="text-gray-400">Workshops</p>

@@ -46,7 +46,7 @@ export function SpeakersSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+          <h2 className="mb-4 bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
             Featured Speakers
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -71,7 +71,7 @@ export function SpeakersSection() {
                     alt={speaker.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
                   
                   {/* Social links - appear on hover */}
                   <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

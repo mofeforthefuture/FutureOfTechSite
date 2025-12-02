@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="mb-4 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+            <h3 className="mb-4 bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
               Future of Tech
             </h3>
             <p className="text-gray-500">

@@ -18,7 +18,7 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="mb-6 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+          <h2 className="mb-6 bg-linear-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
             About the Conference
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto mb-8">
@@ -56,14 +56,14 @@ export function AboutSection() {
               backgroundPosition: 'center',
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-violet-600/10 group-hover:from-blue-600/20 group-hover:to-violet-600/20 transition-all duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-blue-600/10 to-violet-600/10 group-hover:from-blue-600/20 group-hover:to-violet-600/20 transition-all duration-300"></div>
             
             {/* Play button */}
             <div className="absolute inset-0 flex items-center justify-center">
               <motion.div
                 whileHover={{ scale: 1.1 }}
-                className="w-20 h-20 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 flex items-center justify-center shadow-lg shadow-blue-500/50"
+                className="w-20 h-20 rounded-full bg-linear-to-r from-blue-600 to-violet-600 flex items-center justify-center shadow-lg shadow-blue-500/50"
               >
                 <Play className="h-8 w-8 text-white ml-1" fill="white" />
               </motion.div>
