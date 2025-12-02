@@ -1,11 +1,10 @@
 import { motion } from "motion/react";
-import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@heroui/react";
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -15,43 +14,53 @@ export function HeroSection() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black"></div>
+        <div className="absolute inset-0 bg-black/80" />
       </div>
 
-      {/* Animated gradient overlay */}
       <motion.div
         className="absolute inset-0 z-0"
         animate={{
-          background: [
-            "radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)",
-            "radial-gradient(circle at 80% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%)",
-            "radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)",
-            "radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)",
-          ],
+          opacity: [0.05, 0.1, 0.05],
         }}
-        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+        style={{
+          background:
+            "radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 70%)",
+        }}
       />
 
-      {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h1
-            className="mb-6 bg-gradient-to-r from-blue-400 via-violet-400 to-blue-400 bg-clip-text text-transparent"
-            animate={{
-              backgroundPosition: ["0%", "100%", "0%"],
-            }}
-            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-            style={{ backgroundSize: "200% auto" }}
+          <motion.div
+            className="inline-flex mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
           >
-            The Future of Tech is Now.
+            <div className="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-400/30 backdrop-blur-sm">
+              <span className="text-sm font-medium text-blue-400">
+                One-Day Tech Experience
+              </span>
+            </div>
+          </motion.div>
+
+          <motion.h1
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+          >
+            <span className="text-blue-400">The Future of Tech</span>
+            <br />
+            <span className="text-white">is Now.</span>
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-gray-300 max-w-3xl mx-auto"
+            className="text-lg md:text-xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -61,22 +70,24 @@ export function HeroSection() {
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 shadow-lg shadow-blue-500/50 group"
+              className="bg-blue-800  text-white font-semibold hover:bg-blue-700 transition-colors group px-8"
+              endContent={
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              }
             >
               Register Now
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="border-blue-500/50 hover:bg-blue-500/10 hover:border-blue-400"
+              variant="bordered"
+              className="border-blue-500/50 text-white hover:bg-blue-500/10 hover:border-blue-400 transition-all font-semibold px-8"
             >
               Become a Partner
             </Button>
@@ -84,7 +95,6 @@ export function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
         animate={{ y: [0, 10, 0] }}

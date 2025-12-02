@@ -1,5 +1,11 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import "./index.css";
+import { HeroUIProvider } from "@heroui/system";
 
-createRoot(document.getElementById("root")!).render(<App />);
+import "./styles/index.css";
+
+createRoot(document.getElementById("root")!).render(
+  <HeroUIProvider>
+    <App />
+  </HeroUIProvider>
+);
